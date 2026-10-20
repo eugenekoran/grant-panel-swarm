@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# OS junk
+.DS_Store
+._*
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local run artifacts
+runs
+outputs/
+*.log
+
+# Source data, not distributed (available on request; see README)
+data/base_documents.csv
+data/proposals_main.json
+data/proposals_main.meta.json
+
+# Model weights downloaded for vLLM (see MODEL_SERVING.md)
+adapters/
+models/
+*.safetensors
+*.gguf
+*.bin
+scripts/lambda/ssh_config
